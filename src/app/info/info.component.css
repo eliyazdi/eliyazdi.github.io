@@ -1,0 +1,14 @@
+#main{
+  width: 50%;
+  display: inline-block;
+}
+p{
+  width: 75%;
+  font-size: 1.25em;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  margin-bottom: 5px;
+}

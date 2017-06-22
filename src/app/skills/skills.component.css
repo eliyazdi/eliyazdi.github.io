@@ -1,0 +1,38 @@
+#mainSkills{
+  width: 50%;
+  display: inline;
+  float: right;
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+}
+#tabbox{
+  margin: auto;
+  width: 90%;
+  display: block;
+  height: 50px;
+  text-align: center;
+}
+#tabbox app-tabbox{
+  display: inline-block;
+}
+#allSkills{
+  overflow-y: scroll;
+  height: 500px;
+}
+.skillsBox{
+  width: 90%;
+  margin-top: 10px;
+  text-align: left;
+  display: block;
+}
+.skillsBox h2{
+  margin-bottom: 15px;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+ul li{
+  margin-bottom: 10px;
+}
