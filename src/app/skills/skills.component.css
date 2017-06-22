@@ -36,3 +36,8 @@ ul{
 ul li{
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 500px) {
+    #mainSkills{
+      width: 100%;
+    }
+}

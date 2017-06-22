@@ -12,3 +12,12 @@ ul{
 ul li{
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 500px) {
+    #main{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    p{
+      width: 100%;
+    }
+}
