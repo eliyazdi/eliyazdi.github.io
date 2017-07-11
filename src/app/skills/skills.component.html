@@ -61,6 +61,6 @@
     </ul>
   </div>
   <div *ngIf="this.currentTab == 3">
-    Coming soon :)
+    <span *ngIf="this.blogJSON.entries.length == 0">Coming soon :)</span>
   </div>
 </div>
