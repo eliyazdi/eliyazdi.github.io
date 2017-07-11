@@ -13,7 +13,7 @@ export class SkillsComponent implements OnInit {
   blogJSON: any
 
   constructor(http: Http) {
-    http.get('http://orbitmgt.com:3333')
+    http.get('https://orbitmgt.com:3333')
       .map(res => res.json())
       .subscribe(rss => this.blogJSON = rss.feed);
    }
