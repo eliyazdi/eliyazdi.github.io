@@ -1,8 +1,8 @@
 <div id="mainSkills">
   <div id="tabbox">
-    <app-tabbox></app-tabbox>
+    <app-tabbox (onTab)="this.changeTab($event)"></app-tabbox>
   </div>
-  <div id="allSkills">
+  <div id="allSkills" *ngIf="this.currentTab == 1">
     <div class="skillsBox">
       <h2>I'm somewhat ok at coding in:</h2>
       <app-skill image="/assets/programming/swift.png" text="Swift"></app-skill>
@@ -31,33 +31,33 @@
       <app-skill image="/assets/flags/cy.png" text="Welsh (A1)"></app-skill>
       <app-skill image="/assets/flags/ir.png" text="Persian (A1)"></app-skill>
     </div>
-    <div class="skillsBox">
-      <h2>Some other things I'd like to share:</h2>
-      <ul>
-        <li>
-          <a target="_blank" href="https://devpost.com/software/buzzvoice-opuj8s">BuzzVoice</a>, an app for the Pebble smartwatch which I made at
-          SpartaHack 2016 which converts spoken language to Morse
-          code vibrations (won the Community Class Act Hack prize!)
-        </li>
-        <li>
-          I’m the lead organizer at <a target="_blank" href="https://hackbloomfield.com">HackBloomfield</a>, a hackathon being
-          held at Bloomfield Hills High School next year (I also made our
-          website)
-        </li>
-        <li>
-          I put together a website for <a target="_blank" href="http://orbitmgt.com">Orbit Management</a> using Vue.js
-        </li>
-        <li>
-          Last year I submitted my app <a target="_blank" href="https://itunes.apple.com/us/app/3dtones/id1108446298?mt=8">3dtones</a> for Apple’s WWDC
-          scholarship program (it’s actually pretty cringeworthy, I’ve gotten
-          a lot better at iOS development since then)
-        </li>
-        <li>
-          I also co-founded the <a href="http://montreal.langfest.org/">Montreal LangFest</a> after attending the
-          Polyglot Conference in New York in 2015 and wanting a regular
-          language event in North America
-        </li>
-      </ul>
-    </div>
+  </div>
+  <div class="skillsBox" *ngIf="this.currentTab == 2">
+    <h2>Some other things I'd like to share:</h2>
+    <ul>
+      <li>
+        <a target="_blank" href="https://devpost.com/software/buzzvoice-opuj8s">BuzzVoice</a>, an app for the Pebble smartwatch which I made at
+        SpartaHack 2016 which converts spoken language to Morse
+        code vibrations (won the Community Class Act Hack prize!)
+      </li>
+      <li>
+        I’m the lead organizer at <a target="_blank" href="https://hackbloomfield.com">HackBloomfield</a>, a hackathon being
+        held at Bloomfield Hills High School next year (I also made our
+        website)
+      </li>
+      <li>
+        I put together a website for <a target="_blank" href="http://orbitmgt.com">Orbit Management</a> using Vue.js
+      </li>
+      <li>
+        Last year I submitted my app <a target="_blank" href="https://itunes.apple.com/us/app/3dtones/id1108446298?mt=8">3dtones</a> for Apple’s WWDC
+        scholarship program (it’s actually pretty cringeworthy, I’ve gotten
+        a lot better at iOS development since then)
+      </li>
+      <li>
+        I also co-founded the <a href="http://montreal.langfest.org/">Montreal LangFest</a> after attending the
+        Polyglot Conference in New York in 2015 and wanting a regular
+        language event in North America
+      </li>
+    </ul>
   </div>
 </div>

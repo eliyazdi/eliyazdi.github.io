@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-tabbox',
@@ -7,13 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabboxComponent implements OnInit {
 
+  currentTab: number = 1
+  @Output() onTab = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  public popup(){
-    alert("Coming soon :)")
+  changeTab(which: number){
+    this.currentTab = which
+    this.onTab.emit(this.currentTab)
   }
 
 }

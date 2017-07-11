@@ -7,18 +7,28 @@ button{
   font-size: 1em;
   cursor: pointer;
 }
+button:focus{
+  outline: none;
+}
 #button1{
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   margin-right: 0;
   float: left;
   border-right: 0;
-  color: #4286f4;
-  background-color: white;
 }
 #button2{
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  /*border-top-right-radius: 5px;*/
+  /*border-bottom-right-radius: 5px;*/
+  border-right: 0;
   margin-left: 0;
   float: left;
+}
+#button3{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.selected{
+  color: #4286f4;
+  background-color: white;
 }

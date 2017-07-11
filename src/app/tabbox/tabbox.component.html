@@ -1,2 +1,12 @@
-<button id="button1">Info</button>
-<button id="button2" (click)="popup()">Timeline</button>
+<button
+  id="button1"
+  [ngClass]="{selected: this.currentTab == 1}"
+  (click)="changeTab(1)">Skills</button>
+<button
+  id="button2"
+  [ngClass]="{selected: this.currentTab == 2}"
+  (click)="changeTab(2)">Info</button>
+  <button
+    id="button3"
+    [ngClass]="{selected: this.currentTab == 3}"
+    (click)="changeTab(3)">Blog</button>
